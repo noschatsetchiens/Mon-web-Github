@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/72/animal-shelter.png">
+        <meta charset="UTF-8">
+        <title>Register</title>
+    </head>
+    <style>
+        body {
+           background-color: white;
+           font-family: verdana;
+           font-size: 20px;
+        }
+        h1 {
+            background-color: gray;
+           text-align: center; 
+        }
+        nav {
+            text-align: right;
+        }
+   </style>
+    <body>
+        <header>
+            <h1>Vos animaux préférés</h1>
+        </header>
+
+        <nav>
+            <a href="Index.html">Aller à l'accueil</a>
+        </nav>
+
+        <section>
+            <h2>Formulaire d'enregistrement</h2>
+            <form>
+                <h3>
+                    Identité
+                </h3>
+                    <p>
+                        Civilité:
+                        <input type="radio" id="sexhomme" name="sexe">
+                        <label for="sexhomme">Monsieur</label>
+                        <input type="radio" id="sexfemme" name="sexe">
+                        <label for="sexfemme">Madame</label>
+                        <input type="radio" id="sexdemoiselle" name="sexe">
+                        <label for="sexdemoiselle">Mademoiselle</label>
+                    </p> 
+                    <p>
+                        Sexe:
+                        <input type="radio" id="sexhomme" name="sexe">
+                        <label for="sexhomme">Homme</label>
+                        <input type="radio" id="sexfemme" name="sexe">
+                        <label for="sexfemme">Femme</label>
+                    </p>
+                    <p>
+                        Nom & Prénoms:
+                        <label for="prénom"></label>
+                        <input type="text" id="prénom" placeholder="Prénoms">
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Nom de Famille">
+                    </p>
+                    <p>
+                        Date & Lieu de naissance:
+                        <label for="naissance"></label>
+                        <input type="date" id="naissance" required>
+                        <input type="text" id="lieu" placeholder="Lieu de naissance">
+                        <label for="lieu"></label>
+                    </p>
+                       
+                        <div class="champ">
+                    <p>
+                        Nationalité:
+                        <label for="pays">
+                            <select name="pays" id="pays">
+                                <option value="select pays">Faire un choix</option>
+                                <option value="allemagne">Allemagne</option>
+                                <option value="belgique">Belgique</option>
+                                <option value="espagne">Espagne</option>
+                                <option value="france">France</option>
+                                <option value="italie">Italie</option>
+                                <option value="suisse">Suisse</option>
+                                <option value="burkina-faso">Burkina-Faso</option>
+                                <option value="cote d'ivoire">Cote d'Ivoire</option>
+                                <option value="ghana">Ghana</option>
+                                <option value="libéria">Libéria</option>
+                                <option value="mali">Mali</option>
+                                <option value="togo">Togo</option>
+                                <option value="brésil">Brésil</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select> 
+                        </label>
+                    </p>
+                </div>
+                <p>
+                    Statut:
+                    <input type="radio" id="statut" name="statut">
+                    <label for="statut">Etudiant(e)</label>
+                    <input type="radio" id="statut" name="statut">
+                    <label for="statut">Entrepreneur</label>
+                    <input type="radio" id="statut" name="statut">
+                    <label for="statut">Commerçant(e)</label>
+                    <input type="radio" id="statut" name="statut">
+                    <label for="statut">Fonctionnaire</label>
+                    <input type="radio" id="statut" name="statut">
+                    <label for="statut">Autre</label>
+                    <label for="statut"></label>
+                    <input type="text" id="statut" placeholder="Précisez autre" name="statut">
+                </p>
+                
+            <h3>
+                Coordonnées
+            </h3>
+                <label for="adresse">Adresse:</label>
+                <input type="text" id="adresse">
+                <br>
+                <label for="BP">Boite postale:</label>
+                <input type="text" id="BP">
+                <br>
+                <label for="ville">Ville:</label>
+                <input type="text" id="ville">
+                <br>
+                <label for="préfixe">Numéro de téléphone:</label>
+                <input type="text" id="text" placeholder="exemple: +225">
+                <label for="contact"></label>
+                <input type="tel" id="tel">
+                <br>
+                <label for="Email">Email:</label>
+                <input type="text" id="text">   
+                <br>
+                <label for="password">Votre mot de passe:</label>
+                <input type="password" id="password" required>
+                <br>
+                NB:
+                <input type="checkbox" id="CGU" name="general use conditions">
+                Etes-vous d'accord avec les Conditions Générales d'Utilisation ?
+                <br>
+                <input type="submit" value="Soumettre" border-radius="5px">
+            </form>
+
+            <p>
+                Vous avez déjà un compte ? <a href="connexion.html">Se connecter</a>
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; NosChatsEtChiens - 2019. Tous droits réservés.</p>
+        </footer>
+    </body>
+</html>
